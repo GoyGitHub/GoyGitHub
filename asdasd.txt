@@ -1,0 +1,42 @@
+'''def weekday(n):
+    match n:
+        case 0 | 1: return "Monday or Tuesday"
+        case 2: return "Wednesday"
+        case 3: return "Thursday"
+        case 4: return "Friday"
+        case 5: return "Saturday"
+        case 5: return "Sunday"
+        case _: return "Invalid day"
+print(weekday(1))'''
+
+'''#f strings
+def greetings(details):
+    match details:
+        case [time, name]:
+            return f"Good {time},{name}."
+        case [time, *names]:
+            msg=''
+            for name in names:
+                msg += f"Good {time},{name}.\n"
+            return msg
+        case _: return "Invalid input"
+print(greetings(["Morning"," Jason"]))
+print(greetings(["Evening", " Jay", " Chris", " Michelle"]))'''
+
+'''if number even, add to itself
+if number is divisible by 3, square itself
+if number is divisible by 7, cube itself
+otherwise return its negative value'''
+
+def example(num):
+    match num:
+        case mum if num % 2 == 0: return num + num
+        case num if num % 3 == 0: return num **2
+        case num if num % 7 == 0: return num **3
+        case _: return -1*num 
+print(example(2))
+print(example(3))
+print(example(7))
+print(example(5))
+
+
