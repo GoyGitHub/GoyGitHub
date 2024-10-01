@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Typhoon:
+    def __init__(self, name, date, speed):
+        self.name = name
+        self.date = date
+        self.speed = speed
+
+    def display_info(self):
+        print(f"Date: {self.date.split()[0]}")
+        print(f"Speed: {self.speed}")
+
+typhoon_data = {
+    "agaton": {
+        "date": "July 13, 2010",
+        "speed": "95kph"
+    },
+    "bashang": {
+        "date": "July 17, 2010",
+        "speed": "85kph"
+    },
+    "caloy": {
+        "date": "August 4–5, 2010",
+        "speed": "100kph"
+    },
+    "domeng": {
+        "date": "October 17–18, 2010",
+        "speed": "90kph"
+    }
+}
+
+def display_typhoon_info(name):
+    if name in typhoon_data:
+        typhoon = Typhoon(name, typhoon_data[name]['date'], typhoon_data[name]['speed'])
+        typhoon.display_info()
+    else:
+        print(f"Typhoon {name} not found in the data.")
+
+
+user_input_name = input("Enter the typhoon name: ").lower()
+
+display_typhoon_info(user_input_name)
