@@ -1,0 +1,82 @@
+#1
+import java.util.Scanner;
+
+public class main1 {
+    public static void main(String[] args) {
+        Scanner gwapo = new Scanner(System.in);
+
+        int a;
+        int b;
+        int c;
+
+        System.out.println("Enter the first number: ");
+        a = gwapo.nextInt();
+
+        System.out.println("Enter the second number: ");
+        b = gwapo.nextInt();
+
+        c = a + b;
+        System.out.println("Sum of two number is: " + c);
+    }
+}
+
+#2
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double scr;
+        double nitems;
+        double egrade;
+        double a = 50;
+        double b = 50;
+
+        System.out.print("Enter your score: ");
+        scr = scanner.nextDouble();
+
+        System.out.print("Enter the number of items: ");
+        nitems = scanner.nextDouble();
+        
+        egrade = (scr / nitems) * a + b;
+
+        System.out.println("Sum is: " + egrade);
+    }
+}
+
+#3
+import java.util.Scanner;
+
+public class main2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double gpay;
+        double deduc;
+        double SSS;
+        double tax;
+        double Pgibg;
+        double TotalDeduc;
+        double Netpay;
+        System.out.println("SIMPLE PAYROLL PROGRAM");
+        System.out.print("Enter gross pay: ");
+        gpay = scanner.nextDouble();
+        System.out.print("--------------------\n");
+        System.out.print("Deductions");
+        System.out.print("Enter SSS deduction: ");
+        SSS = scanner.nextDouble();
+
+        System.out.print("Enter tax deduction: ");
+        tax = scanner.nextDouble();
+
+        System.out.print("Enter Pag-IBIG deduction: ");
+        Pgibg = scanner.nextDouble();
+        TotalDeduc = SSS + tax + Pgibg;
+        Netpay = gpay - TotalDeduc;
+        
+        System.out.println("Total Deductions: " + TotalDeduc);
+        System.out.print("--------------------\n");
+        System.out.println("Net Pay: " + Netpay);
+    }
+}
