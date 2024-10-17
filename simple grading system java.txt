@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double qz1, qz2, qz3, qt, qptg;
+        double mp1, mp2, mp3, mpt, mptg;
+
+        
+        System.out.print("SIMPLE GRADING SYSTEM\n");
+        System.out.print("Quizzes: (40%)\n");
+        System.out.print("Q1: ");
+        qz1 = scanner.nextDouble();
+        System.out.print("Q2: ");
+        qz2 = scanner.nextDouble();
+        System.out.print("Q3: ");
+        qz3 = scanner.nextDouble();
+        
+        qt = (qz1+qz2+qz3) / 3;
+        System.out.print("QT: " + qt);
+        
+        qptg = (qt) * .40;
+        System.out.print("\nQ%: " + qptg);
+        System.out.print("\n-------------------\n");
+        
+        System.out.print("Machine Problems: (60%)\n");
+        System.out.print("MP1: ");
+        mp1 = scanner.nextDouble();
+        System.out.print("MP2: ");
+        mp2 = scanner.nextDouble();
+        System.out.print("MP3: ");
+        mp3 = scanner.nextDouble();
+        
+        mpt = (mp1+mp2+mp3) / 3;
+        System.out.print("MPT: " + mpt);
+        
+        mptg = (mpt) * .60;
+        System.out.print("\nMP%: " + mptg);
+        
+        
+
+    }
+}
