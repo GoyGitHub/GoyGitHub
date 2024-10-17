@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PageantScore {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter Stage Presence score: ");
+        double sp = input.nextDouble();
+
+        System.out.print("Enter Audience Talent score: ");
+        double at = input.nextDouble();
+
+        System.out.print("Enter Q&A score: ");
+        double qa = input.nextDouble();
+
+        System.out.print("Enter Talent score: ");
+        double tl = input.nextDouble();
+
+        double ga = sp + at + qa + tl;
+
+        System.out.printf("The General Average is: " + ga);
+    }
+}
