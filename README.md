@@ -1,6 +1,6 @@
 # About Me
 
-Hello, I am **Aj**, a web developer specializing in **full-stack development** with a strong focus on **Laravel, PHP, and modern JavaScript frameworks**.  
+Hello, I am **Aj**, a web developer specializing in **full-stack development** with a strong focus on **Laravel, React, Livewire, and JavaScript frameworks**.  
 
 I am passionate about building **scalable, maintainable, and user-friendly applications**. My work emphasizes clean code, best practices, and leveraging modern tools such as **Laravel Breeze, Vite, and TailwindCSS** to create efficient and visually appealing web solutions.  
 
